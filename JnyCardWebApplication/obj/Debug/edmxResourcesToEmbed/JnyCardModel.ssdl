@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JnyCardModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityContainer Name="JnyCardModelStoreContainer">
+    <EntitySet Name="UserTable" EntityType="JnyCardModel.Store.UserTable" store:Type="Tables" store:Schema="dbo" store:Name="UserTable">
+      <DefiningQuery>SELECT 
+      [UserTable].[idUser] AS [idUser], 
+      [UserTable].[email] AS [email], 
+      [UserTable].[password] AS [password], 
+      [UserTable].[kategori] AS [kategori], 
+      [UserTable].[status] AS [status]
+      FROM [dbo].[UserTable] AS [UserTable]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'JnyCard.dbo.UserTable' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="UserTable">
+    <Key>
+      <PropertyRef Name="idUser" />
+    </Key>
+    <Property Name="idUser" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="50" />
+    <Property Name="kategori" Type="int" />
+    <Property Name="status" Type="int" />
+  </EntityType>
+</Schema>

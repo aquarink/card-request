@@ -1,0 +1,5 @@
+C:\Users\Pebriant\documents\visual studio 2010\Projects\JnyCardWebApplication\JnyCardWebApplication\bin\JnyCardWebApplication.dll
+C:\Users\Pebriant\documents\visual studio 2010\Projects\JnyCardWebApplication\JnyCardWebApplication\bin\JnyCardWebApplication.pdb
+C:\Users\Pebriant\documents\visual studio 2010\Projects\JnyCardWebApplication\JnyCardWebApplication\obj\Debug\JnyCardWebApplication.dll
+C:\Users\Pebriant\documents\visual studio 2010\Projects\JnyCardWebApplication\JnyCardWebApplication\obj\Debug\JnyCardWebApplication.pdb
+C:\Users\Pebriant\documents\visual studio 2010\Projects\JnyCardWebApplication\JnyCardWebApplication\obj\Debug\JnyCardWebApplication.csprojResolveAssemblyReference.cache

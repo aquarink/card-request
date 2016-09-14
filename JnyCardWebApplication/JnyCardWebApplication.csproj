@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B8FDB80-24B1-4DAA-B090-9D47EF72320B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JnyCardWebApplication</RootNamespace>
+    <AssemblyName>JnyCardWebApplication</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Hrd.aspx" />
+    <Content Include="HrdCheck.aspx" />
+    <Content Include="HrdEmployee.aspx" />
+    <Content Include="Layout\Assets\css\docs.min.css" />
+    <Content Include="Layout\Assets\css\ie10-viewport-bug-workaround.css" />
+    <Content Include="Layout\Assets\css\src\docs.css" />
+    <Content Include="Layout\Assets\css\src\pygments-manni.css" />
+    <Content Include="Layout\Assets\flash\ZeroClipboard.swf" />
+    <Content Include="Layout\Assets\img\components.png" />
+    <Content Include="Layout\Assets\img\devices.png" />
+    <Content Include="Layout\Assets\img\expo-lyft.jpg" />
+    <Content Include="Layout\Assets\img\expo-newsweek.jpg" />
+    <Content Include="Layout\Assets\img\expo-riot.jpg" />
+    <Content Include="Layout\Assets\img\expo-vogue.jpg" />
+    <Content Include="Layout\Assets\img\sass-less.png" />
+    <Content Include="Layout\Assets\js\customize.min.js" />
+    <Content Include="Layout\Assets\js\docs.min.js" />
+    <Content Include="Layout\Assets\js\ie-emulation-modes-warning.js" />
+    <Content Include="Layout\Assets\js\ie10-viewport-bug-workaround.js" />
+    <Content Include="Layout\Assets\js\ie8-responsive-file-warning.js" />
+    <Content Include="Layout\Assets\js\raw-files.min.js" />
+    <Content Include="Layout\Assets\js\src\application.js" />
+    <Content Include="Layout\Assets\js\src\customizer.js" />
+    <Content Include="Layout\Assets\js\vendor\anchor.min.js" />
+    <Content Include="Layout\Assets\js\vendor\autoprefixer.js" />
+    <Content Include="Layout\Assets\js\vendor\Blob.js" />
+    <Content Include="Layout\Assets\js\vendor\FileSaver.js" />
+    <Content Include="Layout\Assets\js\vendor\holder.min.js" />
+    <Content Include="Layout\Assets\js\vendor\jquery.min.js" />
+    <Content Include="Layout\Assets\js\vendor\jszip.min.js" />
+    <Content Include="Layout\Assets\js\vendor\less.min.js" />
+    <Content Include="Layout\Assets\js\vendor\uglify.min.js" />
+    <Content Include="Layout\Assets\js\vendor\ZeroClipboard.min.js" />
+    <Content Include="Layout\Dist\css\bootstrap-theme.css" />
+    <Content Include="Layout\Dist\css\bootstrap-theme.min.css" />
+    <Content Include="Layout\Dist\css\bootstrap.css" />
+    <Content Include="Layout\Dist\css\bootstrap.min.css" />
+    <Content Include="Layout\Dist\css\navbar-fixed-top.css" />
+    <Content Include="Layout\Dist\js\bootstrap.js" />
+    <Content Include="Layout\Dist\js\bootstrap.min.js" />
+    <Content Include="Layout\Dist\js\jquery.min.js" />
+    <Content Include="Layout\Dist\js\npm.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hrd.aspx.cs">
+      <DependentUpon>Hrd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hrd.aspx.designer.cs">
+      <DependentUpon>Hrd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HrdCheck.aspx.cs">
+      <DependentUpon>HrdCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HrdCheck.aspx.designer.cs">
+      <DependentUpon>HrdCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HrdEmployee.aspx.cs">
+      <DependentUpon>HrdEmployee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HrdEmployee.aspx.designer.cs">
+      <DependentUpon>HrdEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Layout\Assets\brand\bootstrap-outline.svg" />
+    <None Include="Layout\Assets\brand\bootstrap-punchout.svg" />
+    <None Include="Layout\Assets\brand\bootstrap-solid.svg" />
+    <None Include="Layout\Assets\css\docs.min.css.map" />
+    <None Include="Layout\Dist\css\bootstrap-theme.css.map" />
+    <None Include="Layout\Dist\css\bootstrap-theme.min.css.map" />
+    <None Include="Layout\Dist\css\bootstrap.css.map" />
+    <None Include="Layout\Dist\css\bootstrap.min.css.map" />
+    <None Include="Layout\Dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Layout\Dist\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="Layout\Dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Layout\Dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Layout\Dist\fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4143</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
